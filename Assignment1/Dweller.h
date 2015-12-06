@@ -1,5 +1,9 @@
-#pragma once
+#ifndef DWELLER_H
+#define DWELLER_H
+
 #include "GameObject.h"
+#include "Vec2D.h"
+
 class Dweller :
     public GameObject
 {
@@ -11,7 +15,7 @@ public:
     Dweller(const string&, const int&);
 
     virtual ~Dweller();
-
+    
     const int getSPECIAL();
 
     const int getCurrentHealth();
@@ -20,9 +24,9 @@ public:
 
     const int getAttackDmg();
 
-    //void setPosition(const Vec2D&);
+    void setPosition(const Vec2D&);
 
-    //const Vec2D getPosition();
+    const Vec2D getPosition();
 
     void receiveHealthDamage(const int&);
 
@@ -45,12 +49,27 @@ public:
     bool isDead();
 
 protected:
-    
+   
+private:
+
     int position_;
 
     int SPECIAL_;
 
-private:
+    int health_;
+
+    int radiation_;
+
+    int stimpak_;
+
+    int radaway_;
+
+  //Outfit* outfit_;
+
+ //Weapon* weapon_;
+
+
 
 };
 
+#endif /*DWELLER_H*/

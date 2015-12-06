@@ -9,18 +9,21 @@ class GameObject
 public:
     GameObject();						//[CONSTRUCTOR] Intialize instance of GameObject class and instantiate member variables
     
-    virtual ~GameObject();				//[DESTRUCTOR]	Delete instance of GameObject class
+    virtual ~GameObject() = 0;				//[DESTRUCTOR]	Delete instance of GameObject class
 
-    GameObject(const string&);          //[CONSTRUCTOR](Override)	Intialize instance of GameObject class and instantiate member variables and takes in the name of the object
 
-    string getName(void);               //[GETTER] Get name of object
 
-    int getCount();                     //[GETTER] Get the number of this type that has been instantiated
+    virtual string getName(void) = 0;               //[GETTER] Get name of object
+
+    virtual int getCount() = 0;                     //[GETTER] Get the number of this type that has been instantiated
 
 protected:
-    const string kName;                 //[Member Variable] Name of the object
+ 
+    GameObject(const string&);          //[CONSTRUCTOR](Override)	Intialize instance of GameObject class and instantiate member variables and takes in the name of the object
 
 private:
+    const string kName;                 //[Member Variable] Name of the object
+
     int count;                          //[Member Variable] Number of this type that has been instantiated
 };
 
