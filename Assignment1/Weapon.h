@@ -4,9 +4,9 @@ class Weapon :
     public Item
 {
 public:
-    Weapon();
+    Weapon();   //[CONSTRUCTOR] Intialize instance of Weapon class and instantiate member 
     
-    Weapon(const string&, const int&, const int&);
+    Weapon(const string& weaponName, const int& initialDurability, const int& weaponDamage); //[CONSTRUCTOR](Override) Intialize instance of Weapon class and instantiate member and take in name of weapon, initial Durability and weapon damage
 
     virtual ~Weapon();
 

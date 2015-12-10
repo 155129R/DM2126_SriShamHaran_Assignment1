@@ -3,6 +3,7 @@
 #include <iostream>
 
 GameObject::GameObject()
+    :kName(0)
 {
     std::cout << "GameObject was instantiated. No override" << std::endl; //For Testing
 }
