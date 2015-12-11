@@ -11,7 +11,7 @@ public:
     
     virtual ~GameObject();				//[DESTRUCTOR]	Delete instance of GameObject class
 
-    virtual string getName(void) = 0;               //[GETTER] Get name of object
+    virtual string getName(void) ;               //[GETTER] Get name of object
 
     virtual int getCount() = 0;                     //[GETTER] Get the number of this type that has been instantiated
 

@@ -6,7 +6,7 @@ class Weapon :
 public:
     Weapon();   //[CONSTRUCTOR] Intialize instance of Weapon class and instantiate member 
     
-    Weapon(const string& weaponName, const int& initialDurability, const int& weaponDamage); //[CONSTRUCTOR](Override) Intialize instance of Weapon class and instantiate member and take in name of weapon, initial Durability and weapon damage
+    Weapon(const string& kName, const int& durability_, const int& kAttackDmg); //[CONSTRUCTOR](Override) Intialize instance of Weapon class and instantiate member and take in name of weapon, initial Durability and weapon damage
 
     virtual ~Weapon();
 
