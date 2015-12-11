@@ -2,8 +2,7 @@
 #define ITEM_H
 #include "GameObject.h"
 
-class Item :
-    public GameObject
+class Item : public GameObject
 {
 public:
     Item();                                         //[CONSTRUCTOR] Intialize instance of Item class and instantiate member variables

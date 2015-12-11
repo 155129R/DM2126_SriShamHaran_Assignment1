@@ -1,4 +1,4 @@
-class Vec2D
+struct Vec2D
 {
 
 public:
@@ -7,7 +7,7 @@ public:
 
     Vec2D(double x, double y); //[CONSTRUCTOR](Override) Intialize instance of Vec2D class and instantiate member variables and take in (x,y) values
 
-private:
+
     
     double x;
     

@@ -12,6 +12,7 @@ GameObject::GameObject()
 GameObject::~GameObject()
 {
     std::cout << "GameObject was destroyed." << std::endl; //For Testing
+    --count; 
 }
 
 GameObject::GameObject(const string& objectName)
@@ -19,6 +20,7 @@ GameObject::GameObject(const string& objectName)
 {
     std::cout << "GameObject was instantiated. With the objectName: "<< objectName << std::endl; //For Testing
     std::cout << "GameObject was instantiated. With the kName: " << kName << std::endl; //For Testing
+    count++;
 }
 
 int GameObject::getCount()
