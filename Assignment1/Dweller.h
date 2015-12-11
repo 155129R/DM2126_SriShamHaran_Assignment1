@@ -14,7 +14,7 @@ public:
 
     Dweller();                  //[CONSTRUCTOR] Intialize instance of Dweller class and instantiate member variables
 
-    Dweller(const string& kName, const int& SPECIAL_);      //[CONSTRUCTOR](Override) Intialize instance of Dweller class and instantiate member variables and take in name and special value of the dweller
+    Dweller(const string& kName = "", const int& SPECIAL_ = 0);      //[CONSTRUCTOR](Override) Intialize instance of Dweller class and instantiate member variables and take in name and special value of the dweller
 
     virtual ~Dweller();
     

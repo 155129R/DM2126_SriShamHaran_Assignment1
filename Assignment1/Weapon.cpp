@@ -20,3 +20,8 @@ const int Weapon::getAttackDmg()
 {
     return kAttackDmg;
 }
+
+void Weapon::receiveDamage(const int& damageToItemDurability)
+{
+    Weapon::durability_ -= damageToItemDurability;
+}

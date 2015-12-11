@@ -20,3 +20,8 @@ const int Outfit::getSPECIAL()
 {
     return kSPECIAL;
 }
+
+void Outfit::receiveDamage(const int& damageToItemDurability)
+{
+    Outfit::durability_ -= damageToItemDurability;
+}

@@ -13,16 +13,16 @@ public:
 
     virtual string getName(void) ;               //[GETTER] Get name of object
 
-    virtual int getCount() = 0;                     //[GETTER] Get the number of this type that has been instantiated
+    static int getCount();                     //[GETTER] Get the number of this type that has been instantiated
 
 protected:
  
-    GameObject(const string& objectName);          //[CONSTRUCTOR](Override)	Intialize instance of GameObject class and instantiate member variables and takes in the name of the object
+    GameObject(const string& objectName = "");          //[CONSTRUCTOR](Override)	Intialize instance of GameObject class and instantiate member variables and takes in the name of the object
 
 private:
     const string kName;                 //[Member Variable] Name of the object
 
-    int count;                          //[Member Variable] Number of this type that has been instantiated
+    static int count;                          //[Member Variable] Number of this type that has been instantiated
 };
 
 #endif /*GAMEOBJECT_H*/

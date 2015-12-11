@@ -21,10 +21,10 @@ Item::Item(const string& kName, const int& durability_)
     cout << "Item instantiated with kName and durability_" << endl;
 }
 
-void Item::receiveDamage(const int& damageToItemDurability)
-{
-    durability_ -= damageToItemDurability;
-}
+//void Item::receiveDamage(const int& damageToItemDurability)
+//{
+//    //durability_ -= damageToItemDurability;
+//}
 
 const int Item::getDurabilty()
 {
