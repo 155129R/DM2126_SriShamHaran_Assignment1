@@ -6,13 +6,10 @@
 #include "Weapon.h"
 #include "Vec2D.h"
 
-class Dweller :
-    public GameObject
+class Dweller : public GameObject
 {
 
 public:
-
-    //Dweller();                  //[CONSTRUCTOR] Intialize instance of Dweller class and instantiate member variables
 
     virtual ~Dweller();
     

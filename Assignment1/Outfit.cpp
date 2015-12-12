@@ -1,9 +1,5 @@
 #include "Outfit.h"
 
-Outfit::Outfit()
-    :kSPECIAL(0)
-{
-}
 
 
 Outfit::~Outfit()

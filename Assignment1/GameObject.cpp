@@ -10,7 +10,7 @@ GameObject::~GameObject()
 }
 
 GameObject::GameObject(const string& objectName)
-    :kName(objectName)
+:kName(objectName)
 {
     std::cout << "GameObject was instantiated. With the objectName: "<< objectName << std::endl; //For Testing
     std::cout << "GameObject was instantiated. With the kName: " << kName << std::endl; //For Testing
@@ -19,7 +19,6 @@ GameObject::GameObject(const string& objectName)
 
 int GameObject::getCount()
 {
-
     return count;
 }
 

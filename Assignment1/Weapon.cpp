@@ -1,12 +1,6 @@
 #include "Weapon.h"
 
 
-Weapon::Weapon()
-:kAttackDmg(0)
-{
-}
-
-
 Weapon::~Weapon()
 {
 }
