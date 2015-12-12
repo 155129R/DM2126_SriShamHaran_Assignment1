@@ -1,3 +1,4 @@
+* 155129R : Sat Dec 12 22:30:03 2015 +0800 : - kinda fixed, it runs now but crashes
 * 155129R : Sat Dec 12 20:27:52 2015 +0800 : - Failed Attempt at fixing 2 errors. GG.
 * 155129R : Sat Dec 12 20:15:03 2015 +0800 : - Edited various function definitions and declarations, mostly for dweller
 * 155129R : Sat Dec 12 00:10:51 2015 +0800 : - Edited constructors to have defaults - Edited Outfit and Weapon such that they had their own respective definitions for receiveDamage method inherited from Item class
