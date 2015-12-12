@@ -13,7 +13,7 @@ public:
 
     virtual string getName(void);               //[GETTER] Get name of object
 
-    static int getCount();                     //[GETTER] Get the number of this type that has been instantiated
+    static int getCount();
 
 protected:
  

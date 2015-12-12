@@ -6,10 +6,9 @@ Dweller::~Dweller()
 }
 
 Dweller::Dweller(const string& dwellerName, const int& assignedSPECIAL_)
-:GameObject(dwellerName), SPECIAL_(assignedSPECIAL_)
+:GameObject(dwellerName), SPECIAL_(assignedSPECIAL_), position_(Vec2D(0, 0)), health_(100), weapon_(nullptr)
 {
-    position_.x = 0;
-    position_.y = 0;
+ 
 }
 
 const int Dweller::getSPECIAL()
@@ -39,7 +38,7 @@ void Dweller::setPosition(const Vec2D& newPosition)
 
 const Vec2D Dweller::getPosition(void)
 {
-    return this->position_;
+    return position_;
 }
 
 void Dweller::receiveRadDamage(const int& radiationDamageTaken)
@@ -49,7 +48,7 @@ void Dweller::receiveRadDamage(const int& radiationDamageTaken)
 
 void Dweller::receiveEquipmentDamage(const int& damageToDurability)
 {
-    this->outfit_->receiveDamage(damageToDurability);
+    outfit_->receiveDamage(damageToDurability);
 }
 
 void Dweller::addStimpak(const int& addedStimpak_)

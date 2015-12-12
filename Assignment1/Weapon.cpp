@@ -12,7 +12,8 @@ Weapon::Weapon(const string& weaponName, const int& initialDurability_, const in
 }
 const int Weapon::getAttackDmg()
 {
-    return this -> kAttackDmg;
+
+    return kAttackDmg;
 }
 
 void Weapon::receiveDamage(const int& damageToItemDurability)

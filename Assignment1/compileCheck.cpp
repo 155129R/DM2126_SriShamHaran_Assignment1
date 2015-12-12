@@ -25,12 +25,12 @@ void testNames()
     d->getSPECIAL();
     d->getCurrentHealth();
     d->getCurrentRadDamage(); 
-    d->getAttackDmg(); 
+    d->getAttackDmg();                      //Crash
     d->setPosition(currentPos); 
     d->getPosition() ; 
     d->receiveHealthDamage(13); 
     d->receiveRadDamage(15); 
-    d->receiveEquipmentDamage(4);
+    d->receiveEquipmentDamage(4);          //Crash
     d->addStimpak(2); 
     d->addRadAway(5); 
     d->useStimpak(); 
