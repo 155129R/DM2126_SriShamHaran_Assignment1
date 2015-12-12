@@ -7,7 +7,7 @@ using std::string;
 class GameObject
 {
 public:
-    GameObject();						//[CONSTRUCTOR] Intialize instance of GameObject class and instantiate member variables
+ 
     
     virtual ~GameObject();				//[DESTRUCTOR]	Delete instance of GameObject class
 
@@ -22,7 +22,7 @@ protected:
 private:
     const string kName;                 //[Member Variable] Name of the object
 
-    static int count;                          //[Member Variable] Number of this type that has been instantiated
+    static int count;                   //[Member Variable] Number of this type that has been instantiated
 };
 
 #endif /*GAMEOBJECT_H*/

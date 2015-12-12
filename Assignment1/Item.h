@@ -5,7 +5,7 @@
 class Item : public GameObject
 {
 public:
-    Item();                                         //[CONSTRUCTOR] Intialize instance of Item class and instantiate member variables
+
 
     virtual ~Item(); //[DESTRUCTOR]	Delete instance of Item class
 
@@ -13,7 +13,7 @@ public:
 
     virtual void receiveDamage(const int& damageToItemDurability) = 0;  //Apply or Receive damage (Define in outfit and weapon)
 
-    const int getDurabilty(); //[GETTER] Gets durability value of item
+    const int getDurability(); //[GETTER] Gets durability value of item
 
 protected:
 

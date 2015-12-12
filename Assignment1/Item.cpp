@@ -4,12 +4,6 @@
 using std::cout;
 using std::endl;
 
-Item::Item()
-{
-    cout << "Item instantiated" << endl;
-}
-
-
 Item::~Item()
 {
     cout << "Item destroyed" << endl;
@@ -26,7 +20,10 @@ Item::Item(const string& kName, const int& durability_)
 //    //durability_ -= damageToItemDurability;
 //}
 
-const int Item::getDurabilty()
+const int Item::getDurability()
 {
-    return durability_;
+    if (durability_ > 0)
+        return durability_;
+    else 
+        return 0;
 }

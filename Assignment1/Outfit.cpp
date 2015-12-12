@@ -18,7 +18,7 @@ Outfit::Outfit(const string& outfitName, const int& initalDurability, const int&
 
 const int Outfit::getSPECIAL()
 {
-    return kSPECIAL;
+    return this -> kSPECIAL;
 }
 
 void Outfit::receiveDamage(const int& damageToItemDurability)

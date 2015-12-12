@@ -2,12 +2,6 @@
 
 #include <iostream>
 
-GameObject::GameObject()
-    :kName(0)
-{
-    std::cout << "GameObject was instantiated. No override" << std::endl; //For Testing
-}
-
 
 GameObject::~GameObject()
 {
@@ -25,10 +19,11 @@ GameObject::GameObject(const string& objectName)
 
 int GameObject::getCount()
 {
+
     return count;
 }
 
 string GameObject::getName(void)
 {
-    return kName;
+    return this-> kName;
 }

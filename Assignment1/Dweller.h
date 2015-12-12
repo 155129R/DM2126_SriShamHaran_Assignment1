@@ -12,12 +12,12 @@ class Dweller :
 
 public:
 
-    Dweller();                  //[CONSTRUCTOR] Intialize instance of Dweller class and instantiate member variables
-
-    Dweller(const string& kName = "", const int& SPECIAL_ = 0);      //[CONSTRUCTOR](Override) Intialize instance of Dweller class and instantiate member variables and take in name and special value of the dweller
+    //Dweller();                  //[CONSTRUCTOR] Intialize instance of Dweller class and instantiate member variables
 
     virtual ~Dweller();
     
+    Dweller(const string& dwellerName = "", const int& assignedSPECIAL_ = 0);      //[CONSTRUCTOR](Override) Intialize instance of Dweller class and instantiate member variables and take in name and special value of the dweller
+
     const int getSPECIAL();     //[GETTER] Get special value of dweller
 
     const int getCurrentHealth();   //[GETTER] Get current health
@@ -26,7 +26,7 @@ public:
 
     const int getAttackDmg();           //[GETTER] Get attack damage
 
-    void setPosition(const Vec2D& position_);       //[SETTER] Set position(location) of dweller
+    void setPosition(const Vec2D& newPosition);       //[SETTER] Set position(location) of dweller
 
     const Vec2D getPosition();                      //[GETTER] Get position(location) of dweller
 
@@ -36,17 +36,17 @@ public:
 
     void receiveEquipmentDamage(const int& damageToDurability); //Apply damage to durability
 
-    void addStimpak(const int& stimpak_);   //Add stimpak
+    void addStimpak(const int& addedStimpak_);   //Add stimpak
 
-    void addRadAway(const int& radaway_);   //Add RadAway
+    void addRadAway(const int& addedRadaway_);   //Add RadAway
 
     void useStimpak();  
 
     void useRadAway();
 
-    Outfit* assignOutfit(Outfit* outfit_);  //Assign outfit
+    Outfit* assignOutfit(Outfit* newOutfit_);  //Assign outfit
 
-    Weapon* assignWeapon(Weapon* weapon_);  //Assign weapon
+    Weapon* assignWeapon(Weapon* newWeapon_);  //Assign weapon
 
     bool isDead();     //Is Dweller Dead?
 
@@ -54,7 +54,7 @@ protected:
    
 private:
 
-    int position_;
+    Vec2D position_;
 
     int SPECIAL_;
 
