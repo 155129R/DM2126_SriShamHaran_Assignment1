@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="Dweller_8cpp" kind="file" language="C++">
+    <compoundname>Dweller.cpp</compoundname>
+    <includes refid="Dweller_8h" local="yes">Dweller.h</includes>
+    <incdepgraph>
+      <node id="139">
+        <label>Vec2D.h</label>
+        <link refid="Vec2D_8h"/>
+      </node>
+      <node id="137">
+        <label>Item.h</label>
+        <link refid="Item_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+      </node>
+      <node id="135">
+        <label>string</label>
+      </node>
+      <node id="138">
+        <label>Weapon.h</label>
+        <link refid="Weapon_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="136">
+        <label>Outfit.h</label>
+        <link refid="Outfit_8h"/>
+        <childnode refid="137" relation="include">
+        </childnode>
+      </node>
+      <node id="134">
+        <label>GameObject.h</label>
+        <link refid="GameObject_8h"/>
+        <childnode refid="135" relation="include">
+        </childnode>
+      </node>
+      <node id="133">
+        <label>Dweller.h</label>
+        <link refid="Dweller_8h"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+      </node>
+      <node id="132">
+        <label>Assignment1/Dweller.cpp</label>
+        <link refid="Dweller.cpp"/>
+        <childnode refid="133" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+<para>CPP to define dweller functions. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Sri Sham Haran S/O R Raja </para></simplesect>
+<simplesect kind="par"><title>email: 155129R.nyp.edu.sg</title><para></para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Dweller_8h" kindref="compound">Dweller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="classDweller_1a2499017d809b7b72f1647eafc0107f1e" refkind="member"><highlight class="normal"><ref refid="classDweller_1a2499017d809b7b72f1647eafc0107f1e" kindref="member">Dweller::~Dweller</ref>()</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="classDweller_1aa512794c5ed5394a1e7fe7bfb62d82a0" refkind="member"><highlight class="normal"><ref refid="classDweller_1aa512794c5ed5394a1e7fe7bfb62d82a0" kindref="member">Dweller::Dweller</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/>dwellerName,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>assignedSPECIAL_)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal">:<ref refid="classGameObject" kindref="compound">GameObject</ref>(dwellerName),<sp/>SPECIAL_(assignedSPECIAL_),<sp/>position_(<ref refid="structVec2D" kindref="compound">Vec2D</ref>(0,<sp/>0)),<sp/>health_(100),<sp/>weapon_(nullptr)</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="classDweller_1aee5683dcdaa052daac072cfdeb56df2f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDweller_1aee5683dcdaa052daac072cfdeb56df2f" kindref="member">Dweller::getSPECIAL</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>-&gt;<sp/><ref refid="classDweller_1adddef783da3277fdee6c05c9b7c40742" kindref="member">SPECIAL_</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="classDweller_1af4683a57d847666230c652174721da72" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDweller_1af4683a57d847666230c652174721da72" kindref="member">Dweller::getCurrentHealth</ref>()</highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classDweller_1aff75dc01658d330e51043b86c8ec3e21" kindref="member">health_</ref>;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classDweller_1a337769ac74f98a0a548cbc85aef3e9ae" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDweller_1a337769ac74f98a0a548cbc85aef3e9ae" kindref="member">Dweller::getCurrentRadDamage</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>this-&gt;<ref refid="classDweller_1a82ec290d32407101daa1ce99f951f1c9" kindref="member">radiation_</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="classDweller_1a7bb025bd8237c76efc510c603334906f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classDweller_1a7bb025bd8237c76efc510c603334906f" kindref="member">Dweller::getAttackDmg</ref>()</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classDweller_1a9de50e9f37c490934b9bdc8e258d4382" kindref="member">weapon_</ref>-&gt;<ref refid="classWeapon_1aa68d843906315f5f97f85d464c865aef" kindref="member">getAttackDmg</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="classDweller_1a826c764de9c05aa4445c2ae2fab9c6bb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDweller_1a826c764de9c05aa4445c2ae2fab9c6bb" kindref="member">Dweller::setPosition</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structVec2D" kindref="compound">Vec2D</ref>&amp;<sp/>newPosition)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDweller_1ad769b02386e2060776276f64194811a2" kindref="member">position_</ref><sp/>=<sp/>newPosition;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="classDweller_1a934158ebdf06d51169f33cfcdb61d29d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structVec2D" kindref="compound">Vec2D</ref><sp/><ref refid="classDweller_1a934158ebdf06d51169f33cfcdb61d29d" kindref="member">Dweller::getPosition</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classDweller_1ad769b02386e2060776276f64194811a2" kindref="member">position_</ref>;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classDweller_1a9ccfa3c55b3ae44cccf1c9e0ed11394a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDweller_1a9ccfa3c55b3ae44cccf1c9e0ed11394a" kindref="member">Dweller::receiveRadDamage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>radiationDamageTaken)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDweller_1a82ec290d32407101daa1ce99f951f1c9" kindref="member">radiation_</ref><sp/>-=<sp/>radiationDamageTaken;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="classDweller_1a476468220b39a1ec93463aa28498c425" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDweller_1a476468220b39a1ec93463aa28498c425" kindref="member">Dweller::receiveEquipmentDamage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>damageToDurability)</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDweller_1ae660ab1a0a063d9c0d0e075cc66dea87" kindref="member">outfit_</ref>-&gt;<ref refid="classOutfit_1ace99f99089f20d986df49bd0cd2dbb6c" kindref="member">receiveDamage</ref>(damageToDurability);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="classDweller_1ac20a421a832cabf07cd9e7d19060476e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDweller_1ac20a421a832cabf07cd9e7d19060476e" kindref="member">Dweller::addStimpak</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>addedStimpak_)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDweller_1a6222543be35513cc47fada0a5bf3547b" kindref="member">stimpak_</ref>++;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="classDweller_1afe4db1d2c370c0938b4b091764bcc1e8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDweller_1afe4db1d2c370c0938b4b091764bcc1e8" kindref="member">Dweller::addRadAway</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>addedRadaway_)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDweller_1ad906d73273266b219b7efa2241720601" kindref="member">radaway_</ref>++;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="classDweller_1a141c51a497020e45f3d1bf61c6f50167" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDweller_1a141c51a497020e45f3d1bf61c6f50167" kindref="member">Dweller::useStimpak</ref>()</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>--<ref refid="classDweller_1a6222543be35513cc47fada0a5bf3547b" kindref="member">stimpak_</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDweller_1aff75dc01658d330e51043b86c8ec3e21" kindref="member">health_</ref><sp/>+=<sp/>20;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="classDweller_1ad76a3cd483840971553a615ceba34b5f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDweller_1ad76a3cd483840971553a615ceba34b5f" kindref="member">Dweller::useRadAway</ref>()</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>--<ref refid="classDweller_1ad906d73273266b219b7efa2241720601" kindref="member">radaway_</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDweller_1a82ec290d32407101daa1ce99f951f1c9" kindref="member">radiation_</ref><sp/>-=<sp/>10;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classDweller_1a7b903145c11c13aa16846bc81b34036a" refkind="member"><highlight class="normal"><ref refid="classOutfit" kindref="compound">Outfit</ref>*<sp/><ref refid="classDweller_1a7b903145c11c13aa16846bc81b34036a" kindref="member">Dweller::assignOutfit</ref>(<ref refid="classOutfit" kindref="compound">Outfit</ref>*<sp/>newOutfit_)</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOutfit" kindref="compound">Outfit</ref>*<sp/>previousOutfit<sp/>=<sp/><ref refid="classDweller_1ae660ab1a0a063d9c0d0e075cc66dea87" kindref="member">outfit_</ref>;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classDweller_1ae660ab1a0a063d9c0d0e075cc66dea87" kindref="member">outfit_</ref><sp/>=<sp/>newOutfit_;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="classDweller_1acf27e7edac92c060b5e3f5f959277d5a" refkind="member"><highlight class="normal"><ref refid="classWeapon" kindref="compound">Weapon</ref>*<sp/><ref refid="classDweller_1acf27e7edac92c060b5e3f5f959277d5a" kindref="member">Dweller::assignWeapon</ref>(<ref refid="classWeapon" kindref="compound">Weapon</ref>*<sp/>newWeapon_)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classWeapon" kindref="compound">Weapon</ref>*<sp/>previousWeapon<sp/>=<sp/><ref refid="classDweller_1a9de50e9f37c490934b9bdc8e258d4382" kindref="member">weapon_</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classDweller_1a9de50e9f37c490934b9bdc8e258d4382" kindref="member">weapon_</ref><sp/>=<sp/>newWeapon_;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="classDweller_1ad270b72f6e5d03199b8686d7f201ac82" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classDweller_1ad270b72f6e5d03199b8686d7f201ac82" kindref="member">Dweller::receiveHealthDamage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>damageTaken)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDweller_1aff75dc01658d330e51043b86c8ec3e21" kindref="member">health_</ref><sp/>-=<sp/>damageTaken;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="classDweller_1a33bb050f8dd1abba8428d5824ce9725f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classDweller_1a33bb050f8dd1abba8428d5824ce9725f" kindref="member">Dweller::isDead</ref>()</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classDweller_1aff75dc01658d330e51043b86c8ec3e21" kindref="member">health_</ref><sp/>&lt;=<sp/>0)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Assignment1/Dweller.cpp"/>
+  </compounddef>
+</doxygen>

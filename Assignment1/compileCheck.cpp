@@ -1,3 +1,12 @@
+/****************************************************************************/
+/*!
+\file compileCheck
+\author Sri Sham Haran S/O R Raja
+\par email: 155129R@mymail.nyp.edu.sg
+\brief
+cpp
+*/
+/****************************************************************************/
 #include "Dweller.h"
 #include "Outfit.h"
 #include "Weapon.h"

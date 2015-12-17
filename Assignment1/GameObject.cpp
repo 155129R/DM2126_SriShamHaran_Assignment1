@@ -1,3 +1,12 @@
+/****************************************************************************/
+/*!
+\file GameObject.cpp
+\author Sri Sham Haran S/O R Raja
+\par email: 155129R@mymail.nyp.edu.sg
+\brief
+CPP to define  GameObject functions
+*/
+/****************************************************************************/
 #include "GameObject.h"
 
 #include <iostream>

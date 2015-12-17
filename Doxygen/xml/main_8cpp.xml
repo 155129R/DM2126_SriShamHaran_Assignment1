@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="main_8cpp" kind="file" language="C++">
+    <compoundname>main.cpp</compoundname>
+    <includes local="no">iostream</includes>
+    <includes refid="Dweller_8h" local="yes">Dweller.h</includes>
+    <includes refid="Outfit_8h" local="yes">Outfit.h</includes>
+    <includes refid="Weapon_8h" local="yes">Weapon.h</includes>
+    <includes refid="Item_8h" local="yes">Item.h</includes>
+    <includes refid="GameObject_8h" local="yes">GameObject.h</includes>
+    <includes refid="Vec2D_8h" local="yes">Vec2D.h</includes>
+    <incdepgraph>
+      <node id="198">
+        <label>Vec2D.h</label>
+        <link refid="Vec2D_8h"/>
+      </node>
+      <node id="196">
+        <label>Item.h</label>
+        <link refid="Item_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>string</label>
+      </node>
+      <node id="190">
+        <label>Assignment1/main.cpp</label>
+        <link refid="main.cpp"/>
+        <childnode refid="191" relation="include">
+        </childnode>
+        <childnode refid="192" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>Weapon.h</label>
+        <link refid="Weapon_8h"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="195">
+        <label>Outfit.h</label>
+        <link refid="Outfit_8h"/>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="191">
+        <label>iostream</label>
+      </node>
+      <node id="193">
+        <label>GameObject.h</label>
+        <link refid="GameObject_8h"/>
+        <childnode refid="194" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>Dweller.h</label>
+        <link refid="Dweller_8h"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="197" relation="include">
+        </childnode>
+        <childnode refid="198" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a061a0bf10e22f8e495ab1e4060236d77" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testNames</definition>
+        <argsstring>()</argsstring>
+        <name>testNames</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assignment1/main.cpp" line="12" column="1" bodyfile="Assignment1/compileCheck.cpp" bodystart="20" bodyend="80"/>
+        <references refid="classDweller_1afe4db1d2c370c0938b4b091764bcc1e8" compoundref="Dweller_8cpp" startline="68" endline="71">Dweller::addRadAway</references>
+        <references refid="classDweller_1ac20a421a832cabf07cd9e7d19060476e" compoundref="Dweller_8cpp" startline="63" endline="66">Dweller::addStimpak</references>
+        <references refid="classDweller_1a7b903145c11c13aa16846bc81b34036a" compoundref="Dweller_8cpp" startline="85" endline="89">Dweller::assignOutfit</references>
+        <references refid="classDweller_1acf27e7edac92c060b5e3f5f959277d5a" compoundref="Dweller_8cpp" startline="91" endline="95">Dweller::assignWeapon</references>
+        <references refid="classWeapon_1aa68d843906315f5f97f85d464c865aef" compoundref="Weapon_8cpp" startline="22" endline="26">Weapon::getAttackDmg</references>
+        <references refid="classDweller_1a7bb025bd8237c76efc510c603334906f" compoundref="Dweller_8cpp" startline="38" endline="41">Dweller::getAttackDmg</references>
+        <references refid="classGameObject_1a00da4ea36f3945e1da1a2f81061b57d3" compoundref="GameObject_8cpp" startline="31" endline="34">GameObject::getCount</references>
+        <references refid="classDweller_1af4683a57d847666230c652174721da72" compoundref="Dweller_8cpp" startline="28" endline="31">Dweller::getCurrentHealth</references>
+        <references refid="classDweller_1a337769ac74f98a0a548cbc85aef3e9ae" compoundref="Dweller_8cpp" startline="33" endline="36">Dweller::getCurrentRadDamage</references>
+        <references refid="classItem_1a26396e7bd1be4d8ab3590dfac9cbca39" compoundref="Item_8cpp" startline="32" endline="38">Item::getDurability</references>
+        <references refid="classDweller_1a934158ebdf06d51169f33cfcdb61d29d" compoundref="Dweller_8cpp" startline="48" endline="51">Dweller::getPosition</references>
+        <references refid="classOutfit_1ac62f8f308ad5a60cee90a9bfa8d70d4e" compoundref="Outfit_8cpp" startline="24" endline="27">Outfit::getSPECIAL</references>
+        <references refid="classDweller_1aee5683dcdaa052daac072cfdeb56df2f" compoundref="Dweller_8cpp" startline="23" endline="26">Dweller::getSPECIAL</references>
+        <references refid="classDweller_1a33bb050f8dd1abba8428d5824ce9725f" compoundref="Dweller_8cpp" startline="102" endline="109">Dweller::isDead</references>
+        <references refid="classItem_1ae46bd4984ed28a94a2267ed84b4be33c">Item::receiveDamage</references>
+        <references refid="classOutfit_1ace99f99089f20d986df49bd0cd2dbb6c" compoundref="Outfit_8cpp" startline="29" endline="32">Outfit::receiveDamage</references>
+        <references refid="classWeapon_1a3af36da8e3fc1e14fff34d2d3aef1feb" compoundref="Weapon_8cpp" startline="28" endline="31">Weapon::receiveDamage</references>
+        <references refid="classDweller_1a476468220b39a1ec93463aa28498c425" compoundref="Dweller_8cpp" startline="58" endline="61">Dweller::receiveEquipmentDamage</references>
+        <references refid="classDweller_1ad270b72f6e5d03199b8686d7f201ac82" compoundref="Dweller_8cpp" startline="97" endline="100">Dweller::receiveHealthDamage</references>
+        <references refid="classDweller_1a9ccfa3c55b3ae44cccf1c9e0ed11394a" compoundref="Dweller_8cpp" startline="53" endline="56">Dweller::receiveRadDamage</references>
+        <references refid="classDweller_1a826c764de9c05aa4445c2ae2fab9c6bb" compoundref="Dweller_8cpp" startline="43" endline="46">Dweller::setPosition</references>
+        <references refid="classDweller_1ad76a3cd483840971553a615ceba34b5f" compoundref="Dweller_8cpp" startline="79" endline="83">Dweller::useRadAway</references>
+        <references refid="classDweller_1a141c51a497020e45f3d1bf61c6f50167" compoundref="Dweller_8cpp" startline="73" endline="77">Dweller::useStimpak</references>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="15" endline="27">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1a0c7e39f3d69f0c6d2932550c2495bd3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void shouldNotCompile</definition>
+        <argsstring>()</argsstring>
+        <name>shouldNotCompile</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assignment1/main.cpp" line="13" column="1" bodyfile="Assignment1/compileCheck.cpp" bodystart="82" bodyend="93"/>
+        <referencedby refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" compoundref="main_8cpp" startline="15" endline="27">main</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int main</definition>
+        <argsstring>()</argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Assignment1/main.cpp" line="15" column="1" bodyfile="Assignment1/main.cpp" bodystart="15" bodyend="27"/>
+        <references refid="classDweller_1a7b903145c11c13aa16846bc81b34036a" compoundref="Dweller_8cpp" startline="85" endline="89">Dweller::assignOutfit</references>
+        <references refid="classDweller_1aee5683dcdaa052daac072cfdeb56df2f" compoundref="Dweller_8cpp" startline="23" endline="26">Dweller::getSPECIAL</references>
+        <references refid="main_8cpp_1a0c7e39f3d69f0c6d2932550c2495bd3b" compoundref="compileCheck_8cpp" startline="82" endline="93">shouldNotCompile</references>
+        <references refid="main_8cpp_1a061a0bf10e22f8e495ab1e4060236d77" compoundref="compileCheck_8cpp" startline="20" endline="80">testNames</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::cout;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>std::endl;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Dweller_8h" kindref="compound">Dweller.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Outfit_8h" kindref="compound">Outfit.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Weapon_8h" kindref="compound">Weapon.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Item_8h" kindref="compound">Item.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="GameObject_8h" kindref="compound">GameObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Vec2D_8h" kindref="compound">Vec2D.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a061a0bf10e22f8e495ab1e4060236d77" kindref="member">testNames</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1a0c7e39f3d69f0c6d2932550c2495bd3b" kindref="member">shouldNotCompile</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="main_8cpp_1ae66f6b31b5ad750f1fe042a706a4e3d4" kindref="member">main</ref>()</highlight></codeline>
+<codeline lineno="16"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a061a0bf10e22f8e495ab1e4060236d77" kindref="member">testNames</ref>();</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="main_8cpp_1a0c7e39f3d69f0c6d2932550c2495bd3b" kindref="member">shouldNotCompile</ref>();</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classDweller" kindref="compound">Dweller</ref><sp/>d(</highlight><highlight class="stringliteral">&quot;One&quot;</highlight><highlight class="normal">,<sp/>5555555);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classOutfit" kindref="compound">Outfit</ref><sp/>o(</highlight><highlight class="stringliteral">&quot;Outfit&quot;</highlight><highlight class="normal">,<sp/>0,<sp/>1234567);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>d.<ref refid="classDweller_1aee5683dcdaa052daac072cfdeb56df2f" kindref="member">getSPECIAL</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>d.<ref refid="classDweller_1a7b903145c11c13aa16846bc81b34036a" kindref="member">assignOutfit</ref>(&amp;o);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>d.<ref refid="classDweller_1aee5683dcdaa052daac072cfdeb56df2f" kindref="member">getSPECIAL</ref>()<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Assignment1/main.cpp"/>
+  </compounddef>
+</doxygen>

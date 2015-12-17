@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.10">
+  <compounddef id="Item_8h" kind="file" language="C++">
+    <compoundname>Item.h</compoundname>
+    <includes refid="GameObject_8h" local="yes">GameObject.h</includes>
+    <includedby refid="Outfit_8h" local="yes">Assignment1/Outfit.h</includedby>
+    <includedby refid="Weapon_8h" local="yes">Assignment1/Weapon.h</includedby>
+    <includedby refid="compileCheck_8cpp" local="yes">Assignment1/compileCheck.cpp</includedby>
+    <includedby refid="Item_8cpp" local="yes">Assignment1/Item.cpp</includedby>
+    <includedby refid="main_8cpp" local="yes">Assignment1/main.cpp</includedby>
+    <incdepgraph>
+      <node id="177">
+        <label>Assignment1/Item.h</label>
+        <link refid="Item.h"/>
+        <childnode refid="178" relation="include">
+        </childnode>
+      </node>
+      <node id="179">
+        <label>string</label>
+      </node>
+      <node id="178">
+        <label>GameObject.h</label>
+        <link refid="GameObject_8h"/>
+        <childnode refid="179" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="188">
+        <label>Assignment1/Weapon.cpp</label>
+        <link refid="Weapon_8cpp"/>
+      </node>
+      <node id="180">
+        <label>Assignment1/Item.h</label>
+        <link refid="Item.h"/>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="187" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="189" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="183">
+        <label>Assignment1/compileCheck.cpp</label>
+        <link refid="compileCheck_8cpp"/>
+      </node>
+      <node id="185">
+        <label>Assignment1/main.cpp</label>
+        <link refid="main_8cpp"/>
+      </node>
+      <node id="187">
+        <label>Assignment1/Weapon.h</label>
+        <link refid="Weapon_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="188" relation="include">
+        </childnode>
+      </node>
+      <node id="189">
+        <label>Assignment1/Item.cpp</label>
+        <link refid="Item_8cpp"/>
+      </node>
+      <node id="181">
+        <label>Assignment1/Outfit.h</label>
+        <link refid="Outfit_8h"/>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="186">
+        <label>Assignment1/Outfit.cpp</label>
+        <link refid="Outfit_8cpp"/>
+      </node>
+      <node id="182">
+        <label>Assignment1/Dweller.h</label>
+        <link refid="Dweller_8h"/>
+        <childnode refid="183" relation="include">
+        </childnode>
+        <childnode refid="184" relation="include">
+        </childnode>
+        <childnode refid="185" relation="include">
+        </childnode>
+      </node>
+      <node id="184">
+        <label>Assignment1/Dweller.cpp</label>
+        <link refid="Dweller_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classItem" prot="public">Item</innerclass>
+    <briefdescription>
+<para>Class to define the class for <ref refid="classItem" kindref="compound">Item</ref>. </para>    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Sri Sham Haran S/O R Raja </para></simplesect>
+<simplesect kind="par"><title>email: 155129R.nyp.edu.sg</title><para></para></simplesect>
+</para>    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ITEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ITEM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="GameObject_8h" kindref="compound">GameObject.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="classItem" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classItem" kindref="compound">Item</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGameObject" kindref="compound">GameObject</ref></highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classItem_1a11663c84075b78c3ae5e30fdfcd7c458" kindref="member">~Item</ref>();<sp/></highlight><highlight class="comment">//[DESTRUCTOR]<sp/><sp/><sp/><sp/><sp/>Delete<sp/>instance<sp/>of<sp/>Item<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classItem_1a852070e8b679a30c51edbd9ec7462e1c" kindref="member">Item</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">string</highlight><highlight class="normal">&amp;<sp/><ref refid="classGameObject_1a975468b0205494c8809af8260c45f1df" kindref="member">kName</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="classItem_1aa565c4091f6ac0634d762fb250128cee" kindref="member">durability_</ref><sp/>=<sp/>0);</highlight><highlight class="comment">//[CONSTRUCTOR]<sp/>Intialize<sp/>instance<sp/>of<sp/>Item<sp/>class<sp/>and<sp/>instantiate<sp/>member<sp/>variables<sp/>and<sp/>takes<sp/>in<sp/>name<sp/>of<sp/>object<sp/>and<sp/>initial<sp/>durability<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classItem_1ae46bd4984ed28a94a2267ed84b4be33c" kindref="member">receiveDamage</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/>damageToItemDurability)<sp/>=<sp/>0;<sp/><sp/></highlight><highlight class="comment">//Apply<sp/>or<sp/>Receive<sp/>damage<sp/>(Define<sp/>in<sp/>outfit<sp/>and<sp/>weapon)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************************************************************/</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/****************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classItem_1a26396e7bd1be4d8ab3590dfac9cbca39" kindref="member">getDurability</ref>();<sp/></highlight><highlight class="comment">//[GETTER]<sp/>Gets<sp/>durability<sp/>value<sp/>of<sp/>item</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="classItem_1aa565c4091f6ac0634d762fb250128cee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classItem_1aa565c4091f6ac0634d762fb250128cee" kindref="member">durability_</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*ITEM_H*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Assignment1/Item.h"/>
+  </compounddef>
+</doxygen>

@@ -1,3 +1,12 @@
+/****************************************************************************/
+/*!
+\file Weapon.cpp
+\author Sri Sham Haran S/O R Raja
+\par email: 155129R@mymail.nyp.edu.sg
+\brief
+CPP to define Weapon functions
+*/
+/****************************************************************************/
 #include "Weapon.h"
 
 

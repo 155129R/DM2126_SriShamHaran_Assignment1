@@ -1,3 +1,12 @@
+/****************************************************************************/
+/*!
+\file Item.cpp
+\author Sri Sham Haran S/O R Raja
+\par email: 155129R@mymail.nyp.edu.sg
+\brief
+CPP to define  Item functions
+*/
+/****************************************************************************/
 #include "Item.h"
 #include <iostream>
 
